@@ -1,0 +1,29 @@
+{
+  "name": "electron-fast-api",
+  "version": "1.0.0",
+  "description": "Criação de projeto base desktop",
+  "main": "public/assets/js/main.js",
+  "scripts": {
+    "py-install": "pip install -r requirements.txt",
+    "py-build": "pyinstaller --workpath=engine/build --distpath=engine/dist api.spec",
+    "electron-dev": "electron .",
+    "electron-build": "electron-builder --config electron-builder.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiogoSilvaDK/Electron-Fast-api.git"
+  },
+  "author": "Ginanjar Noviawan",
+  "license": "ISC",
+  "homepage": "https://github.com/DiogoSilvaDK/Electron-Fast-api.git#readme",
+  "devDependencies": {
+    "axios": "^1.7.4",
+    "electron": "^31.4.0",
+    "electron-builder": "^24.13.3",
+    "electron-reloader": "^1.2.1",
+    "python-shell": "^3.0.0"
+  },
+  "dependencies": {
+    "electron-is-dev": "^1.2.0"
+  }
+}
